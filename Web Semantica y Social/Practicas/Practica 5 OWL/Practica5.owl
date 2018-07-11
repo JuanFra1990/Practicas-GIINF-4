@@ -1,0 +1,1044 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneArbitro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneArbitro">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneArbitro"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneArbitro"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arbitro"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEquipos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEquipos">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEquipos"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEquipos"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEstadisticas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEstadisticas">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEstadisticas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneGoles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneGoles">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneGoles"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneGoles"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneGrupos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneGrupos">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneGrupos"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneGrupos"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneJugadores -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneJugadores">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneJugadores"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneJugadores"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tienePartidos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tienePartidos">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tienePartidos"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tienePartidos"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tienePartidos"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTarjetas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTarjetas">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTarjetas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTarjetas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTarjetas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTarjetas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Tarjeta"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneDisponibilidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneDisponibilidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneDorsal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneDorsal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEdad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEdad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Tarjeta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneLogotipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneLogotipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneMinuto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneMinuto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Tarjeta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneNombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneNombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arbitro"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneResultado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneResultado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTablaClasificatoria -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTablaClasificatoria">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arbitro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arbitro">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEdad"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive>16</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEquipos"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">32</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEquipos"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">48</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneJugadores"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">14</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneJugadores"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">30</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gol">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneJugadores"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneMinuto"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEquipos"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEdad"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive>14</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneArbitro"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arbitro"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneEquipos"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTarjetas"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaRoja"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneTarjetas"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">16</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaAmarilla"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Persona">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneId"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:length>9</xsd:length>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Tarjeta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Tarjeta">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneJugadores"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#tieneMinuto"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaAmarilla -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaAmarilla">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Tarjeta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaRoja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaRoja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Tarjeta"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#A.S._Roma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#A.S._Roma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Alisson_Becker"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A.S. Roma</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Aleksandr_Kokorin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Aleksandr_Kokorin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Zenit"/>
+        <tieneTarjetas rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TA1"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Alisson_Becker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Alisson_Becker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#A.S._Roma"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arsenal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arsenal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jack_Wilshere"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Arsenal F.C.</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Atletico_Mineros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Atletico_Mineros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Eneldo_Ventaflores"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Atletico Mineros</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Champions_League -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Champions_League">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion"/>
+        <tieneGrupos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_1"/>
+        <tieneGrupos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_2"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Cüneyt_Çakir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Cüneyt_Çakir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arbitro"/>
+        <tienePartidos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido1"/>
+        <tienePartidos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido2"/>
+        <tieneDisponibilidad rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneDisponibilidad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Eneldo_Ventaflores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Eneldo_Ventaflores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Atletico_Mineros"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#F.C._Barcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#F.C._Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lionel_Messi"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">F.C. Barcelona</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Felix_Brych -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Felix_Brych">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arbitro"/>
+        <tienePartidos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Final"/>
+        <tieneDisponibilidad rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneDisponibilidad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Final -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Final">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+        <tieneArbitro rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Felix_Brych"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#F.C._Barcelona"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Madrid"/>
+        <tieneMinuto rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</tieneMinuto>
+        <tieneResultado rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0-0</tieneResultado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gianluca_Rocchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gianluca_Rocchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arbitro"/>
+        <tienePartidos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Semifinal_1"/>
+        <tienePartidos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Semifinal_2"/>
+        <tieneDisponibilidad rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneDisponibilidad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#A.S._Roma"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Atletico_Mineros"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#F.C._Barcelona"/>
+        <tieneTablaClasificatoria rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTablaClasificatoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Internacional_de_Jaen"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Manchester_United"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Madrid"/>
+        <tieneTablaClasificatoria rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tieneTablaClasificatoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lyon"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Zenit"/>
+        <tieneTablaClasificatoria rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTablaClasificatoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arsenal"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Milan"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Club_de_la_Glorieta"/>
+        <tieneTablaClasificatoria rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTablaClasificatoria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Internacional_de_Jaen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Internacional_de_Jaen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jose_Dominguez"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Internacional de Jaén</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jack_Wilshere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jack_Wilshere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arsenal"/>
+        <tieneTarjetas rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TR2"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jose_Dominguez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jose_Dominguez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Internacional_de_Jaen"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Leonardo_Bonucci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Leonardo_Bonucci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Milan"/>
+        <tieneTarjetas rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TA2"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lionel_Messi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lionel_Messi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#F.C._Barcelona"/>
+        <tieneGoles rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#1"/>
+        <tieneGoles rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#3"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lyon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lyon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Memphis_Depay"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Olympique de Lyon</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Manchester_United -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Manchester_United">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Pogba"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Manchester United F.C.</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Memphis_Depay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Memphis_Depay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lyon"/>
+        <tieneGoles rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#2"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Milan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Milan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Leonardo_Bonucci"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A.C. Milan</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+        <tieneArbitro rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Cüneyt_Çakir"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#A.S._Roma"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#F.C._Barcelona"/>
+        <tieneGoles rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#1"/>
+        <tieneGoles rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#3"/>
+        <tieneMinuto rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.0</tieneMinuto>
+        <tieneResultado rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0-2</tieneResultado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+        <tieneArbitro rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Cüneyt_Çakir"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lyon"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Zenit"/>
+        <tieneGoles rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#2"/>
+        <tieneTarjetas rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TA1"/>
+        <tieneMinuto rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.0</tieneMinuto>
+        <tieneResultado rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0-0</tieneResultado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Pepe_Rodriguez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Pepe_Rodriguez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Club_de_la_Glorieta"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">10</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Pogba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Pogba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Manchester_United"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Club_de_la_Glorieta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Club_de_la_Glorieta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Pepe_Rodriguez"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Real Club de la Glorieta</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Madrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Sergio_Ramos"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Real Madrid</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Semifinal_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Semifinal_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+        <tieneArbitro rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gianluca_Rocchi"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Manchester_United"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Madrid"/>
+        <tieneTarjetas rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TR1"/>
+        <tieneMinuto rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.0</tieneMinuto>
+        <tieneResultado rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1-0</tieneResultado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Semifinal_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Semifinal_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Partido"/>
+        <tieneArbitro rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gianluca_Rocchi"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Arsenal"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Milan"/>
+        <tieneTarjetas rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TA2"/>
+        <tieneTarjetas rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TR2"/>
+        <tieneMinuto rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</tieneMinuto>
+        <tieneResultado rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0-0</tieneResultado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Sergio_Ramos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Sergio_Ramos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jugador"/>
+        <tieneEquipos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Real_Madrid"/>
+        <tieneTarjetas rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TR1"/>
+        <tieneDorsal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</tieneDorsal>
+        <tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TA1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaAmarilla"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Aleksandr_Kokorin"/>
+        <tieneMinuto rdf:datatype="http://www.w3.org/2001/XMLSchema#double">80.0</tieneMinuto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TA2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TA2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaAmarilla"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Leonardo_Bonucci"/>
+        <tieneMinuto rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.5</tieneMinuto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TR1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaRoja"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Sergio_Ramos"/>
+        <tieneMinuto rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</tieneMinuto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TR2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#TarjetaRoja"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Jack_Wilshere"/>
+        <tieneMinuto rdf:datatype="http://www.w3.org/2001/XMLSchema#double">36.25</tieneMinuto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#UEFA_Europa_League -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#UEFA_Europa_League">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Competicion"/>
+        <tieneGrupos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_3"/>
+        <tieneGrupos rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Grupo_4"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Zenit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Zenit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Equipo"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Aleksandr_Kokorin"/>
+        <tieneLogotipo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneLogotipo>
+        <tieneNombre rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">F.C. Zenit</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gol"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lionel_Messi"/>
+        <tieneId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</tieneId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gol"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Memphis_Depay"/>
+        <tieneId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</tieneId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Gol"/>
+        <tieneJugadores rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/1/untitled-ontology-5#Lionel_Messi"/>
+        <tieneId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</tieneId>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

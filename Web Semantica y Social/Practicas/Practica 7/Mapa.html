@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Mapa de practica 7 </title>
+		<style>
+		body, #map-canvas{
+			height: 100%;
+		}
+		</style>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+			
+			<script>
+				function queryDBpedia(map) {
+					sparql = "select * \
+					where { \
+						<http://es.dbpedia.org/resource/Jaén> rdfs:label ?label; \
+						geo:lat ?lat; \
+						geo:long ?long; \
+						rdfs:comment ?desc; \
+						dbpedia-owl:thumbnail ?thumb \
+					}";
+
+					$.ajax({
+						url: "http://es.dbpedia.org/sparql?default-graph-uri",
+						cache: false,
+						dataType: "jsonp",
+						type: "GET",
+						data: {
+							query: sparql,
+							format: 'application/sparql-results+json'
+						},
+						success: function(rsp){
+							addPOIs(rsp.results.bindings, map);	
+						}
+					});
+				} //queryDBpedia
+
+				function addPOIs(pois, map){
+					pois.forEach(function(info){
+						var marker = new google.maps.Marker({
+							position: new google.maps.LatLng(info.lat.value, info.long.value),
+							map: map,
+							title: info.label.value
+						});
+						var description = '<div id="content">' +
+						'<h1>'+info.label.value+'</h1>'+
+						'<p><img src="'+info.thumb.value+'" align="left" style="margin-right: 10px" />'+
+						info.desc.value+'</p>'+
+						'</div>';
+						var infowindow = new google.maps.InfoWindow({
+							content: description
+						});
+			
+						google.maps.event.addListener(marker, 'click', function() {
+							infowindow.open(map, marker);
+						});
+					});
+				} //addPOI
+
+				google.maps.event.addDomListener(window, 'load', function() {
+					var centerCoor = new google.maps.LatLng(37.7667, -3.76667);
+					var mapOptions = {
+						zoom: 9,
+						center: centerCoor
+					};
+					var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+					queryDBpedia(map);
+				});
+
+			</script>
+</head>
+<body>
+	<div id="map-canvas"></div>
+</body>
+</html>

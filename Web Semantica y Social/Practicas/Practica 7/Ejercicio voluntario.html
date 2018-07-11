@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<title>Mapa de practica 7 </title>
+		<style>
+		html { overflow-y:hidden; }
+		body, #map-canvas{
+			height: 90%;
+			text-align: center;
+			margin-top: 20px;
+		}
+		</style>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			
+			<script>
+				
+				
+			
+				function queryDBpedia() {
+					var categoria;
+					var termino;
+					var dir;
+					var idi;
+					var prod;
+				
+				
+					categoria = document.getElementById("Categoria").value;
+					termino = document.getElementById("termino").value;
+					
+					switch(categoria) {
+						case "director":
+							dir=termino;
+							termino="";
+						case "idioma":
+							idi=termino;
+							termino="";
+						case "productora":
+							prod=termino;
+							termino="";
+					}
+					
+					if(  termino != "" && categoria != "" ) 
+					{
+						alert("El termino a buscar es: " + termino + " En la categoria: " + categoria);
+						sparql = "select distinct ?film ?lab "
+						+ "where { " 
+						+ "?film rdf:type dbo:Film . " 
+						+ " ?film rdfs:label ?lab ." 
+						+ " ?film dbo:director ?director . " 
+						+ "?director dbo:birthName ?labdir . " 
+						+ " ?film dbp:language ?idioma . " 
+						+  "?idioma rdfs:label ?labidioma . " 
+						+ " ?film dbp:studio ?productora . " 
+						+ " ?productora foaf:name ?labprod . "
+						+ " FILTER(LANG(?lab) = 'en') . ";
+						
+						if (categoria == "Titulo") {
+							sparql += "FILTER regex(?lab, '" + termino + "') . ";
+						} else if (categoria == "director") {
+							sparql += "FILTER regex(?labdir, '" + dir + "') . ";
+						} else if ( categoria == "Idioma"){
+							sparql += "FILTER regex(?labidioma, '" + idi + "') . ";
+						} else if (categoria == "Productora"){
+							sparql += "FILTER regex(?labprod, '" + prod + "') . ";
+						}
+						sparql += "}";
+						
+					
+						$.ajax({
+							url: "http://dbpedia.org/sparql?default-graph-uri",
+							cache: false,
+							dataType: "jsonp",
+							type: "GET",
+							data: {
+								query: sparql,
+								format: 'application/sparql-results+json'
+							},
+							statusCode: {
+								400: function(error) {
+									$("#errorResultados").text(error.responseText);
+									$("#errorResultados").css('color', 'red');
+								}
+							},
+							success: function(rsp){
+									addResults(rsp.results.bindings);
+							}
+						});
+					} else {
+						alert("Necesitamos que introduzca un termino y una categoria");
+					}
+				} //queryDBpedia
+				
+				function addResults(pois){
+					pois.forEach(function(info){
+						var results = '<div id="content">' +
+						'<h1>'+ info.lab.value +'</h1>'+
+						'<h2>'+ info.film.value +'</h2>'+
+						'</div>';
+						document.getElementById("search-canvas").innerHTML = results;
+					});
+				}//addResults
+				
+				function CambiarValor(){
+					document.getElementById('image').style.display = 'none';
+					queryDBpedia();
+				}
+			</script>
+</head>
+<body>
+	<div id="image" style='display:block;'> <img src="https://pbs.twimg.com/profile_images/638742081091993600/8UwmmUl8_400x400.jpg" height="300px"	/> </div>
+	<h4>Busqueda:</h4> <input type="text" id="termino">
+	<select id="Categoria">
+		<option value="" disabled selected>Seleccione una Categoria...</option>
+		<option value="Titulo">Titulo</option>
+		<option value="Director">Director</option>
+		<option value="Idioma">Idioma</option>
+		<option value="Productora">Productora</option>
+	</select>
+	<button onclick="CambiarValor()"> Buscar</button> 
+	<div id="search-canvas"></div>
+	<div id="error" class="errorResultados"> </div>
+</body>
+</html>

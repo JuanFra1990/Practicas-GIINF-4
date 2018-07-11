@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title>Mapa de practica 7 </title>
+		<style>
+		html { overflow-y:hidden; }
+		body, #map-canvas{
+			height: 90%;
+			text-align: center;
+			margin-top: 20px;
+		}
+		</style>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+			
+			<script>
+				var codPostal;
+				function queryDBpedia(map) {
+					codPostal = document.getElementById("codPostal").value;
+					if(  codPostal != "" ) 
+					{
+						alert("El codigo postal seleccionado es: " + codPostal);
+						sparql = "select distinct ?lab ?desc ?thumb ?la ?lo "
+						+ "where { " + "?n dbpprop:codProvincia " + codPostal + ";" 
+						+ " rdfs:label ?lab;" + " geo:lat ?la; " + "geo:long ?lo; " 
+						+ " dbpedia-owl:thumbnail ?thumb; " + " rdfs:comment ?desc . "
+						+ " ?c dbpedia-owl:capital ?n . " + " FILTER(LANG(?lab) = 'es') . "
+						+ " } " + " LIMIT 10 ";
+					
+						$.ajax({
+							url: "http://es.dbpedia.org/sparql?default-graph-uri",
+							cache: false,
+							dataType: "jsonp",
+							type: "GET",
+							data: {
+								query: sparql,
+								format: 'application/sparql-results+json'
+							},
+							success: function(rsp){
+								addPOIs(rsp.results.bindings, map);	
+							}
+						});
+					} else {
+						alert("Necesitamos que introduzca un codigo postal");
+					}
+				} //queryDBpedia
+
+				function addPOIs(pois, map){
+					pois.forEach(function(info){
+						var marker = new google.maps.Marker({
+							position: new google.maps.LatLng(info.la.value, info.lo.value),
+							map: map,
+							title: info.lab.value
+						});
+						var description = '<div id="content">' +
+						'<h1>'+info.lab.value+'</h1>'+
+						'<p><img src="'+info.thumb.value+'" align="left" style="margin-right: 10px" />'+
+						info.desc.value+'</p>'+
+						'</div>';
+						var infowindow = new google.maps.InfoWindow({
+							content: description
+						});
+			
+						google.maps.event.addListener(marker, 'click', function() {
+							infowindow.open(map, marker);
+						});
+					});
+				} //addPOI
+				/*
+				google.maps.event.addDomListener(window, 'load', function() {
+					var centerCoor = new google.maps.LatLng(38.7667, -3.76667);
+					var mapOptions = {
+						zoom: 6,
+						center: centerCoor
+					};
+					var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+					queryDBpedia(map);
+				}); 
+				*/
+				function CambiarValor(){
+					document.getElementById('image').style.display = 'none';
+					codPostal = document.getElementById("codPostal").value;
+					var centerCoor = new google.maps.LatLng(38.7667, -3.76667);
+					var mapOptions = {
+						zoom: 6,
+						center: centerCoor
+					};
+					var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+					queryDBpedia(map);
+				}
+			</script>
+</head>
+<body>
+	<div id="image" style='display:block;'> <img src="http://static1.lasprovincias.es/cosaspracticas/multimedia/201801/05/media/cortadas/maps-1-k46-U50547584853NYD-624x385@Las%20Provincias.jpg" height="300px"	/> </div>
+	<h4>Introduzca los dos primeros digitos del Codigo Postal:</h4> <input type="text" id="codPostal" maxlength="2"> 
+	<button onclick="CambiarValor()"> Buscar</button> 
+	<div id="map-canvas"></div>
+</body>
+</html>
